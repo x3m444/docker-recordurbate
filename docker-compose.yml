@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  recordurbate:
+    build: ./recordurbate
+    container_name: recordurbate
+    volumes:
+      - ./data:/data
+      - /srv/sto1/recordubate:/videos
+    restart: unless-stopped

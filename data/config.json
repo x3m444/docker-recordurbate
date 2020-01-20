@@ -1,0 +1,7 @@
+{
+  "youtube-dl_cmd": "youtube-dl",
+  "auto_reload_config": true,
+  "rate_limit": true,
+  "rate_limit_time": 5,
+  "streamers": []
+}
