@@ -22,3 +22,5 @@
   "streamers": ["streamer1"]
 }
 ```
+## Todo
+- [ ] support environment variables 
