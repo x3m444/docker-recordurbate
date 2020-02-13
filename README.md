@@ -1,5 +1,5 @@
 # docker-recordurbate
-original project: https://github.com/oliverjrose99/Recordurbate. I just changed some things so it would run nice in a docker container
+original project: https://github.com/oliverjrose99/Recordurbate. I just changed some things so it would run nice in a docker container.
 ## How to use
 - put streamer or streamers in config.json
 - change download location in docker-compose.yml
