@@ -3,10 +3,25 @@
 original project: https://github.com/oliverjrose99/Recordurbate. I just changed some things so it would run nice in a docker container.
 
 ## How to use
-- put streamer or streamers in config.json
-- change download location in docker-compose.yml
-- docker-compose up
-
+Download docker-compose if you dont have that already
+````bash
+pip install docker-compose
+````
+Download the repo
+````bash
+git clone https://github.com/LootScooper/docker-recordurbate.git
+cd docker-recordurbate
+````
+Then you edit the docker-compose.yml with an editor of your choice. And change " - /srv/sto1/recordubate:/videos" on line 9. You need to change "/srv/sto1/recordubate" to your video path.
+Run!!
+````bash
+docker-compose up
+````
+Or if you want to run your container detached (In the background)
+````bash
+docker-compose up -d
+````
+https://docs.docker.com/compose/
 ### Example config
 ```json
 {
