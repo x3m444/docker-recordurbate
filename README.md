@@ -14,6 +14,7 @@ git clone https://github.com/LootScooper/docker-recordurbate.git
 cd docker-recordurbate
 ````
 Then you edit the docker-compose.yml with an editor of your choice. And change " - /srv/sto1/recordubate:/videos" on line 9. You need to change "/srv/sto1/recordubate" to your video path.
+Put streamer or streamers in config.json
 Run!!
 ````bash
 docker-compose up
@@ -30,7 +31,7 @@ cd docker-recordurbate/recordurbate
 docker build . -t recordurbate
 docker start -d --restart unless-stopped -v your-config-folder:/data -v my-video-folder:/videos recordurbate
 ````
-Make sure you copy config.json and youtube-dl.config to your config folder.
+Make sure you copy config.json and youtube-dl.config to your config folder. And to put streamer or streamers in config.json
 ### Example config
 ```json
 {
