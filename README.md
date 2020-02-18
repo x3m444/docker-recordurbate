@@ -3,6 +3,7 @@
 original project: https://github.com/oliverjrose99/Recordurbate. I just changed some things so it would run nice in a docker container.
 
 ## How to use
+### docker-compose
 Download docker-compose if you dont have that already
 ````bash
 pip install docker-compose
@@ -22,6 +23,14 @@ Or if you want to run your container detached (In the background)
 docker-compose up -d
 ````
 https://docs.docker.com/compose/
+### docker
+````bash
+git clone https://github.com/LootScooper/docker-recordurbate.git
+cd docker-recordurbate/recordurbate
+docker build . -t recordurbate
+docker start -d --restart unless-stopped -v your-config-folder:/data -v my-video-folder:/videos recordurbate
+````
+Make sure you copy config.json and youtube-dl.config to your config folder.
 ### Example config
 ```json
 {
